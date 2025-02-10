@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+  <!-- Background blur effect for 'p' -->
+  <text x="20" y="70" 
+        font-family="Arial, sans-serif" 
+        font-size="90" 
+        font-weight="900"
+        fill="#7FB5FF"
+        filter="blur(2px)"
+        opacity="0.3">
+    p
+  </text>
+  
+  <!-- Main 'p' in light blue -->
+  <text x="20" y="70" 
+        font-family="Arial, sans-serif" 
+        font-size="90" 
+        font-weight="900"
+        fill="#7FB5FF">
+    p
+  </text>
+  
+  <!-- 'd' with dark blue gradient -->
+  <defs>
+    <linearGradient id="dark-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A8A"/>
+      <stop offset="100%" style="stop-color:#2563EB"/>
+    </linearGradient>
+  </defs>
+  
+  <text x="65" y="70" 
+        font-family="Arial, sans-serif" 
+        font-size="90" 
+        font-weight="900"
+        fill="url(#dark-gradient)">
+    d
+  </text>
+  
+  <!-- Subtle dot accent -->
+  <circle cx="140" cy="20" r="5" fill="#1E3A8A" opacity="0.8"/>
+</svg>

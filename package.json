@@ -1,0 +1,34 @@
+{
+  "name": "pop-up-dictionary",
+  "version": "1.0.0",
+  "description": "An Electron-based application to quickly look up word meanings.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win64": "npx electron-packager . PopUpDictionary --platform=win32 --arch=x64 --out=release-builds --overwrite --asar --icon=icon.ico",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-installer": "node ./installer/createInstaller.js",
+    "serve:dist": "http-server src/dist"
+  },
+  "keywords": [
+    "electron",
+    "dictionary",
+    "popup",
+    "windows",
+    "api-dictionary"
+  ],
+  "author": "Yogeshwaran",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^34.0.2",
+    "electron-packager": "^17.1.2",
+    "electron-winstaller": "^5.4.0",
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "@nut-tree-fork/nut-js": "^4.2.4",
+    "axios": "^1.7.9",
+    "electron-store": "^10.0.1",
+    "js-levenshtein": "^1.1.6"
+  }
+}
