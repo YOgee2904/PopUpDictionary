@@ -17,7 +17,7 @@ We are excited to announce the release of Pop Up Dictionary v1.0.0! This Electro
 1. Clone the repository:
    ```sh
    git clone https://github.com/YOgee2904/PopUpDictionary.git
-   cd pop-up-dictionary
+   cd PopUpDictionary
    ```
 
 2. Install dependencies:
