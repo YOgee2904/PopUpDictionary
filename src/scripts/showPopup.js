@@ -103,7 +103,7 @@ function showPopup(data) {
       event.preventDefault();
       popupWindow.hide();
     });
-
+    
     popupWindow.on("closed", () => {
       popupWindow = null;
     });
@@ -148,6 +148,7 @@ function getTray() {
  * Restart the application.
  */
 function restart() {
+  tray.destroy();
   app.relaunch();
   app.exit();
 }
